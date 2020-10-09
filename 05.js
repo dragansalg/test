@@ -1,4 +1,10 @@
 /*
+Det verkar som att jag borde lyssna på de klasskamrater som sa åt mig att dumpa grupparbetet och fokusera
+på mitt eget. Efter att ha kollat igenom diverse lösningar för fråga 2, och klurat på fråga 4 och 5 så
+märks det att jag saknar kunskaper som jag önskar att jag hade koll på nu till tentan och den individuella uppgiften.
+Mina kunskaper just nu ligger där jag anser att jag borde ha varit under vecka 3-4. 
+
+Min moral är på 0, stor risk att jag hoppar av utbildningen om jag inte lyckats ta igen de kunskaper som jag saknar.
 
 Lös problemen i koden. Exempel på körning visar följande:
 
@@ -52,20 +58,20 @@ class Dice {
     calculateDiceValues() {
         this.dice_values = new Array(7).fill(0);
 
-        this.dice.maps(current_value => {
+        this.dice.map(current_value => {
             this.dice_values[current_value.value]++;
         })
     }
 
     show_dice() {
-        this.dice.map(current_value = > {
+        this.dice.map(current_value => {
             console.log(current_value.innerHTML);
         })
     }
 
     show_dice_values() {
         for ( let i = 0; i <= 7; i++ ) {
-            console.log(i + ': ' this.dice_values[i]);
+            console.log(i + this.dice_values[i]);
         }
     }
 
